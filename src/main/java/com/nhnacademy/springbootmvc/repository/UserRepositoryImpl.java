@@ -22,5 +22,10 @@ public class UserRepositoryImpl implements UserRepository {
         return userMap.values().stream().toList();
     }
 
+    @Override
+    public User getUser(String userId) {
+        return userMap.get(userId);
+    }
+
 
 }
